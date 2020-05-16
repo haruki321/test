@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+  <script type="text/javascript">
+    var audioElem;
+    function PlaySound(id_value){
+      const src = document.getElementById(id_value).getAttribute("src");
+      audioElem = new Audio();
+      audioElem.src = src;
+      audioElem.play();
+    }
+  </script>
+</head>
+<body>
+  <button onclick="PlaySound(this.id)" id="play1" src="ohayo_01.wav">おはよ！</button>
+  <button onclick="PlaySound(this.id)" id="play2" src="oyasu.wav">おやすみ</button>
+</body>
+</html>
